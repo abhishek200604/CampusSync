@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo1.png" alt="CampusSync Logo" width="120" height="120">
+  <img src="img/logo1.png" alt="CampusSync Logo" width="120" height="120">
   
   # 🎓 CampusSync - College ERP System
   
@@ -282,7 +282,11 @@ PROJECT/
 │   ├── index.js                # Server entry point
 │   └── package.json
 │
-├── logo1.png                    # Project logo
+├── img/                         # Project images
+│   ├── logo1.png               # CampusSync logo
+│   ├── Home Page.png           # Home page screenshot
+│   ├── Faculty Dashboard.png   # Faculty dashboard screenshot
+│   └── Student Dashboard.png   # Student dashboard screenshot
 └── README.md                    # This file
 ```
 
@@ -366,16 +370,14 @@ CampusSync features a modern, premium UI with:
 
 ## 📸 Screenshots
 
-> **Note:** Add screenshots of your application here to showcase the UI
-
 ### Home Page
-![Home Page](./screenshots/home.png)
+![Home Page](img/Home%20Page.png)
 
 ### Faculty Dashboard
-![Faculty Dashboard](./screenshots/faculty-dashboard.png)
+![Faculty Dashboard](img/Faculty%20Dashboard.png)
 
-### Student Timetable
-![Student Timetable](./screenshots/student-timetable.png)
+### Student Dashboard
+![Student Dashboard](img/Student%20Dashboard.png)
 
 ---
 
@@ -390,6 +392,15 @@ Contributions are welcome! If you'd like to improve CampusSync:
 5. Open a Pull Request
 
 ---
+
+## 👥 Project Creators
+
+This project was developed by a dedicated team of students:
+
+- **ABHISHEK TAMTE**
+- **AARY THASAL**
+- **PRATIK TAWHARE**
+- **SHAHID SHAIKH**
 
 ## 📝 License
 
