@@ -5,7 +5,8 @@ import { updateScheduleRealtime } from '../store/slices/scheduleSlice';
 import { addNotification } from '../store/slices/notificationSlice';
 import toast from 'react-hot-toast';
 
-const SOCKET_URL = 'http://localhost:5000';
+// Use environment variable for production, fallback to localhost for dev
+const SOCKET_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 export const useSocket = () => {
     const socketRef = useRef(null);
