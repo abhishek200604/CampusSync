@@ -25,9 +25,11 @@ const Home = () => {
                 <header className="px-6 py-4">
                     <nav className="max-w-7xl mx-auto flex items-center justify-between">
                         <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center">
-                                <GraduationCap className="w-7 h-7 text-white" />
-                            </div>
+                            <img
+                                src="/logo1.png"
+                                alt="CampusSync Logo"
+                                className="w-12 h-12 rounded-xl object-contain"
+                            />
                             <div>
                                 <h1 className="text-2xl font-bold text-white">CampusSync</h1>
                                 <p className="text-xs text-gray-400">College ERP System</p>

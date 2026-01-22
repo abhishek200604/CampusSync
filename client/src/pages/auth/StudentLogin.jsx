@@ -55,9 +55,11 @@ const StudentLogin = () => {
                 {/* Login Card */}
                 <div className="glass rounded-2xl p-8 shadow-2xl">
                     <div className="text-center mb-8">
-                        <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                            <GraduationCap className="w-8 h-8 text-white" />
-                        </div>
+                        <img
+                            src="/logo1.png"
+                            alt="CampusSync Logo"
+                            className="w-16 h-16 rounded-2xl object-contain mx-auto mb-4"
+                        />
                         <h2 className="text-2xl font-bold text-white">Student Login</h2>
                         <p className="text-gray-400 mt-2">Enter your credentials to access your dashboard</p>
                     </div>

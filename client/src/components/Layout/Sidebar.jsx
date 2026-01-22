@@ -63,13 +63,11 @@ const Sidebar = ({ isOpen, setIsOpen, role }) => {
                 {/* Logo Section */}
                 <div className="h-16 flex items-center justify-between px-4 border-b border-gray-100">
                     <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center flex-shrink-0">
-                            {role === 'faculty' ? (
-                                <Users className="w-5 h-5 text-white" />
-                            ) : (
-                                <GraduationCap className="w-5 h-5 text-white" />
-                            )}
-                        </div>
+                        <img
+                            src="/logo1.png"
+                            alt="CampusSync Logo"
+                            className="w-10 h-10 rounded-xl object-contain flex-shrink-0"
+                        />
                         {isOpen && (
                             <div className="overflow-hidden">
                                 <h1 className="text-lg font-bold text-gray-800">CampusSync</h1>
