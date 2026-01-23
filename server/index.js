@@ -8,6 +8,12 @@ import dotenv from 'dotenv';
 // Load env vars
 dotenv.config();
 
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 // Import config
 import connectDB from './config/db.js';
 
@@ -80,11 +86,20 @@ app.use((err, req, res, next) => {
 });
 
 // 404 handler
-app.use((req, res) => {
+// 404 handler (API only) - MUST BE BEFORE SPA CATCH-ALL
+app.use('/api/*', (req, res) => {
     res.status(404).json({
         success: false,
         message: 'Route not found'
     });
+});
+
+// Serve static assets in production
+app.use(express.static(path.join(__dirname, '../client/dist')));
+
+// Handle React routing, return all requests to React app
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist', 'index.html'));
 });
 
 const PORT = process.env.PORT || 5000;

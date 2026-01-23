@@ -168,10 +168,10 @@ NODE_ENV=development
 # Database
 MONGODB_URI=mongodb://localhost:27017/campussync
 # Or use MongoDB Atlas:
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/campussync
+# MONGODB_URI=mongodb://localhost:27017/campussync
 
 # JWT Authentication
-JWT_SECRET=your_super_secret_jwt_key_here_change_this
+JWT_SECRET=campus_sync_secret_key
 
 # Client URL (for CORS)
 CLIENT_URL=http://localhost:5173
