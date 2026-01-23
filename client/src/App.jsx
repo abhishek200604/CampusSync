@@ -4,6 +4,7 @@ import useSocket from './hooks/useSocket';
 
 // Pages
 import Home from './pages/Home';
+import About from './pages/About';
 import FacultyLogin from './pages/auth/FacultyLogin';
 import StudentLogin from './pages/auth/StudentLogin';
 import FacultyRegister from './pages/auth/FacultyRegister';
@@ -45,6 +46,7 @@ function App() {
         <Routes>
             {/* Public Routes */}
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/faculty/login" element={<FacultyLogin />} />
             <Route path="/student/login" element={<StudentLogin />} />
             <Route path="/faculty/register" element={<FacultyRegister />} />

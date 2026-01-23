@@ -135,8 +135,16 @@ const Home = () => {
                 </main>
 
                 {/* Footer */}
-                <footer className="text-center py-8 text-gray-500 text-sm">
-                    <p>© 2026 CampusSync.</p>
+                <footer className="text-center py-8 border-t border-white/10">
+                    <div className="flex flex-col items-center gap-2">
+                        <p className="text-gray-400 text-sm">© 2026 CampusSync. All rights reserved.</p>
+                        <p className="text-gray-500 text-xs">
+                            designed and developed by{' '}
+                            <Link to="/about" className="text-cyan-400 hover:text-cyan-300 font-bold transition-colors uppercase">
+                                TEAM
+                            </Link>
+                        </p>
+                    </div>
                 </footer>
             </div>
         </div>
